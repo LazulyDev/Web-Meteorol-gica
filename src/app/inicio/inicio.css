@@ -1,0 +1,29 @@
+#header{
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--color-principal-oscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center     ;
+    color: var(--color-fondo);
+}
+
+#cuerpo{
+    background-color: var(--color-fondo);
+    width: 100vw;
+    height: 80vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 1rem;
+}
+.accordion{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.imagen{
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+}
