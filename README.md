@@ -14,7 +14,7 @@ Una aplicación web moderna y reactiva desarrollada con **Angular** y **Bootstra
 * **Angular** - Framework para el desarrollo de la interfaz de usuario.
 * **Bootstrap** - Framework de CSS para un diseño ágil y responsivo.
 * **TypeScript** - Lenguaje base para una lógica de tipado fuerte.
-* **OpenWeatherMap API** (o la API que estés consumiendo) - Para la obtención de datos climáticos.
+* **OpenWeatherMap API** - Para la obtención de datos climáticos (⚠️La API key no es un elemento incluido en el código del repositorio).
 
 ## 📦 Instalación y Configuración
 
