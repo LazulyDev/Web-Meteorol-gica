@@ -6,14 +6,37 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                    aria-expanded="true" aria-controls="collapseOne" (click)="getMeteoCity('Madrid')">
                     Tiempo de Madrid
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <img src="Madrid.jpg" alt="imagen de la Gran vía de Madrid" class="imagen">
-                    
+                    <div class="table-container">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tiempo Actual</th>
+                                    <th scope="col">Temperatura</th>
+                                    <th scope="col">Sensación Térmica</th>
+                                    <th scope="col">Humedad</th>
+                                    <th>prueba</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider" *ngIf="weatherData as m">
+                                <tr>
+                                    <td><img [src]="'https://openweathermap.org/img/wn/' + m.weather[0].icon + '@2x.png'"
+                                            [alt]="m.weather[0].description" style="width: 3rem;"></td>
+                                    <td>{{ m.main.temp }}ºC</td>
+                                    <td>{{ m.main.feels_like }}ºC</td>
+                                    <td>{{ m.main.humidity }}</td>
+                                    <td>prueba</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
