@@ -14,7 +14,6 @@ export class Meteo {
 
   constructor(private http: HttpClient){}
 
-  // on process DO NOT USE! (yet ;) )
   // get weather using current position
   getMeteoCoordinates(lat: string, lon:string): Observable<MeteoResponse>{
       return this.http.get<MeteoResponse>(`${this.URL}&lat=${lat}&lon=${lon}&appid${this.apiKey}&units=metric`)

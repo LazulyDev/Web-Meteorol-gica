@@ -36,7 +36,6 @@ export class Inicio implements OnInit {
     )
   }
 
-  // on process DO NOT USE! yet ;)
   // get weather using current possition
   getMeteoCoordinates(lat: number, log: number) {
     return this.meteo.getMeteoCoordinates(lat.toString(), log.toString()).subscribe(data => {
