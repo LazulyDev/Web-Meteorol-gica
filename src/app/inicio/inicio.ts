@@ -23,7 +23,7 @@ export class Inicio implements OnInit {
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformID)) {
-      this.getCurrentPositionAndMap()
+      this.getCurrentPositionWeatherAndMap()
     }
   }
 
@@ -61,17 +61,17 @@ export class Inicio implements OnInit {
   }
 
   // get current position, initialize map (initMapDecor()), and show weather data
-  getCurrentPositionAndMap() {
+  getCurrentPositionWeatherAndMap() {
 
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((pos) => {
+      navigator.geolocation.getCurrentPosition(async (pos) => {
         this.lat = pos.coords.latitude
         this.lon = pos.coords.longitude
+
+        await this.initMapDecor(this.lat!, this.lon!)
+
+        this.getMeteoCoordinates(this.lat!, this.lon!)
       })
-
-      this.initMapDecor(this.lat!, this.lon!)
-
-      this.getMeteoCoordinates(this.lat!, this.lon!)
     } else {
       console.error("geolocation not found")
     }

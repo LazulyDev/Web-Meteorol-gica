@@ -1,14 +1,14 @@
-#header{
+#header {
     width: 100vw;
     height: 20vh;
     background-color: var(--color-principal-oscuro);
     display: flex;
     justify-content: center;
-    align-items: center     ;
+    align-items: center;
     color: var(--color-fondo);
 }
 
-#cuerpo{
+#cuerpo {
     background-color: var(--color-fondo);
     width: 100vw;
     height: 100vh;
@@ -17,23 +17,31 @@
     align-items: center; */
     padding-top: 1rem;
 }
-.accordion{
+
+.accordion {
     width: 90vw;
     margin: 0 auto;
 }
 
-.accordion-body{
+.accordion-body {
     display: flex;
 }
 
-.imagen{
+.imagen {
     width: 40%;
     object-fit: cover;
     object-position: center;
 }
 
-.table-container{
+.table-container {
     width: 100%;
     padding: 1rem;
 }
 
+#mapa {
+    width: 40%;        
+    min-height: 300px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    z-index: 1; 
+}

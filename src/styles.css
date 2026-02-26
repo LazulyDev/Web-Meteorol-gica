@@ -6,3 +6,5 @@
     --azul-securndario: #5b88a5;
     --gris-auxiliar:#d4cdc5;
 }
+
+@import "leaflet/dist/leaflet.css";
