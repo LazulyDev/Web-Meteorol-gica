@@ -35,3 +35,8 @@ Para hacer la Build del proyecto:
 ```bash
 ng build
 ```
+
+## 🧠 Posibles Mejoras Futuras
+* **Buscador de ciudades**: permitiría buscar una ciudad y mostraría el tiempo en esa ciudad
+* **Mejoras estilísticas**: nuevos cambios de colores para hacer de la web algo más bonito de ver
+
